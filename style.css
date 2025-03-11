@@ -1,0 +1,143 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+
+}
+
+/* Elementos com o ID "title" */
+#title {
+    font-family: sans-serif;
+    color: #091057;
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+} 
+
+/* Elementos com o ID "title2" */
+#title2 {
+    font-family: sans-serif;
+    color: #091057;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+} 
+
+/* Elementos com o ID "title3" */
+
+#title3 {
+    font-family: sans-serif;
+    color: #091057;
+    margin-top: 10px;
+
+} 
+
+#check{
+    display:table;
+}
+
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #091057;
+    margin-left: 20%;
+    margin-top: 2%;
+    align-items:center;
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/18/04/09/cat-7269094_1280.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #091057;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "group" nos estados das pseudoclasses "before" e "after" */
+.group:before, .group:after {
+    display: table;
+}
+
+/* Elementos de classe "group" no estado da pseudoclasse "after" */
+.group:after {
+    clear: both;
+}
+
+/* Elementos de classe "field" */
+.field {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "field" de tag <label> */
+.field label {
+    margin-bottom: 0.2em;
+    color: #091057;
+    display: block;
+}
+
+/* Elementos de classe "field" ou "group" de tag <fieldset> */
+fieldset.group .field {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "field" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.field input[type="text"], .field input[type="email"], .field select, .field textarea {
+    padding: 0.2em;
+    border: 1px solid #091057;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "field" de tag <select> e <option>*/
+.field select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "field" com tag <input>, <select> e <textarea> todas com estado da pseudoclasse "focus"*/
+.field input:focus, .field select:focus, .field textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "button" */
+.button {
+    font-size: 1.2em;
+    background: #D76C82;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    top: 90%;
+    left: 50%;
+    transform: translate(400%)   
+
+}
+
+/* Elemento de classe "button" com o estado da pseudoclasse "hover" */
+.button:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe "button" e de tag <select> */
+.button, select{
+    cursor: pointer;
+}

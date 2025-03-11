@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        <h1 id="title"> PET REGISTRATION </h1>
+        <br>
+        <h3 id="title2"> <strong>Owner's Information:</strong></h3>
+        <br>
+    </div>
+
+<form>
+    <fieldset class="group">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" name="owner" id="owner" required>
+        </div>
+
+        <div class="field"> 
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="field"> 
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required>
+        </div>
+        <div class="field"> 
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address">
+        </div>
+    </fieldset>
+
+    <div class="field">
+        <h3 id="title3"> <strong>Pet's Information:</strong></h3>
+        <br>
+    </div>
+    
+    <fieldset class="group">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="field"> 
+            <label for="type">Type:</label>
+            <input type="text" name="type" id="type" required>
+        </div>
+
+        <div class="field"> 
+            <label for="breed">Breed:</label>
+            <input type="text" name="breed" id="breed" required>
+        </div>
+
+        <div class="field"> 
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" required>
+        </div>
+        <div class="field"> 
+            <label for="weight">Weight:</label>
+            <input type="text" name="weight" id="weight" required>
+        </div>
+        <br>
+        <div class="field"> 
+            <label>Gender:</label> <br>
+            <label>
+                <input type="radio" name="gender" value="male" checked>Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+        </div>
+    </fieldset>
+    <br>
+    <div class="field"> 
+        <label> <strong>Is your pet castrated?</strong></label> <br>
+        <label>
+            <input type="radio" name="castraded" value="yes" checked>Yes
+        </label>
+        <label>
+            <input type="radio" name="castrated" value="no">No
+        </label>
+    </div>
+    <div class="field"> 
+        <label><strong>Special Needs/Medical?</strong></label> <br>
+        <label>
+            <input type="radio" name="medical" value="yes" checked>Yes
+        </label>
+        <label>
+            <input type="radio" name="medical" value="no">No
+        </label>
+    </div>
+    <div class="field"> 
+        <label for="needs">If <strong>Yes</strong>, please specify:</label>
+        <input type="text" name="needs" id="needs">
+    </div>
+    <br>
+    <div class="field">
+        <label for="food"><strong>Food Preference:</strong></label><br>
+        <select id="food" required>
+          <option selected disabled value="">Select</option>
+          <option>Dry Food</option>
+          <option>Wet Food</option>
+          <option>Natural Food</option>
+          <option>Other</option>
+        </select>
+    </div>
+    <br>
+    <fieldset class="group">
+        <div id="check">
+            <ul><strong>Select the services of interest:</strong>
+
+                <br><br>
+
+                <li for="service1">
+                    <input type="checkbox" id="service1" name="service1" value="Veterinary Care"/> 
+                    Veterinary Care
+                </li>
+                <li for="service2">
+                    <input type="checkbox" id="service2" name="service2" value="Bath"/>
+                     Bath
+                </li>
+                <li for="service3">
+                    <input type="checkbox" id="service3" name="service3" value="Grooming"/>
+                    Grooming
+                </li>
+                <li for="service4">
+                    <input type="checkbox" id="service4" name="service4" value="Animal Transport"/>
+                    Animal Transport
+                </li>
+                <li for="service5">
+                    <input type="checkbox" id="service5" name="service5" value="Day Care"/>
+                    Day Care
+                </li>
+                <li for="service6"> 
+                    <input type="checkbox" id="service6" name="service6" value="Hotel"/>
+                    Hotel
+                </li>
+                <li for="service7"> 
+                    <input type="checkbox" id="service7" name="service7" value="Pet Products"/>
+                     Pet Products
+                </li>
+            </ul>
+        </div>
+    </fieldset>
+    <div class="field">
+        <br>
+        <label for="information"><strong>Other Relevant Information: </strong></label>
+        <textarea rows="6" style="width: 26em" id="information" name="information"></textarea>
+    </div>
+    <br>
+    <button class="button" type="submit" onsubmit="">Submit</button>            
+
+</form>
+    
+</body>
+</html>
+
+
